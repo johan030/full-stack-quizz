@@ -28,6 +28,10 @@ body h3 {
   color: #ffa502;
   font-size: 1.5rem;
 }
+
+#quiz{
+  border: 1px solid white;
+}
 body .container .choices {
   display: flex;
   flex-wrap: wrap;
