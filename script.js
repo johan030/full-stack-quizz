@@ -1,36 +1,38 @@
-const afficheQuestion = document.getElementById("question");
-const btn1 = document.getElementById('btn-1');
-let questionsData = [];
+const url = "questions.json";
+console.log(url);
+var Emptytab = []; // Création d'un tableau vide pour mettre mes data dedans
 
-const fetchQuestions = () => {
-    // RECUPERATION DU FICHIER JSON
-fetch("quiz.json")
-.then((res) => res.json())
-.then((data) => (questionsData = data.questions));
+async function getData() {
+  // Fonction pour prendre les data de mon fichier JSON
+  const responce = await fetch(url);
+  const data = await responce.json();
 
-setTimeout(() =>{                      // on attend 2s avant d'afficher console.log         
-    console.log(questionsData);
-},2000)
-
-};
-
-
-// On crée une fonction pour afficher les questions
-
-const questionsDisplay = async () => { 
-   await fetchQuestions();
-
-
-
+  console.log(data);
+  return data;
 }
-questionsDisplay();
+
+const copyMyData = async (data) => {
+  // Fonction Pour remplir mon Tab vide pour pouvoir l'utiliser partout
+  const FillTab = await getData(data);
+  Emptytab.push(...FillTab);
+
+  return Emptytab;
+};
+getData();
+
+// on selectionne nos id qui correspondent à chaque choix ainsi que la question
+const questionTitle = document.getElementById("questionTitle");
+const choice0 = document.getElementById("choice0");
+const choice1 = document.getElementById("choice1");
+const choice2 = document.getElementById("choice2");
+const choice3 = document.getElementById("choice3");
+
+let currentQuestion = 0; // on commence le quiz à 0 ( question 1 )
+
+loadQuiz();
+
+function loadQuiz() {
 
 
-
-
-//lorsqu'on clique sur le bouton suivant, on passe à la prochaine question
-btn1.addEventListener('click', () => {
-questionsDisplay();
-})
-
-
+  currentQuestion++; // on passe à la question suivante
+}
