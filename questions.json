@@ -1,76 +1,64 @@
  {
   "questions": [
     {
-      "question1": "What is the scientific name of a butterfly?",
+      "question": "What is the scientific name of a butterfly?",
       "answers": [
-        {
-          "a": "Apis",
-          "b": "Coleoptera",
-          "c": "Formicidae",
-          "d": "Rhopalocera"
-        }
+        "Apis",
+        "Coleoptera",
+        "Formicidae",
+        "Rhopalocera"
       ],
       "correctIndex": 3
     },
     {
-        "question1": "What is the scientific name of a butterfly?",
+        "question": "What is the scientific name of a white shark?",
         "answers": [
-          {
-            "a": "Apis",
-            "b": "Coleoptera",
-            "c": "Formicidae",
-            "d": "Rhopalocera"
-          }
+            "Carcharodon carcharias",
+            "Coleoptera",
+            "Formicidae",
+            "Rhopalocera"
+        ],
+        "correctIndex": 0
+      },
+      {
+        "question": "What is the scientific name of a Lion",
+        "answers": [
+            "Apis",
+            "Panthera leo",
+            "Formicidae",
+            "Rhopalocera"
+        ],
+        "correctIndex": 1
+      },
+      {
+        "question": "What is the scientific name of a Cat?",
+        "answers": [
+            "Apis",
+            "Coleoptera",
+            "Formicidae",
+            "Felis catus"
         ],
         "correctIndex": 3
       },
       {
-        "question1": "What is the scientific name of a butterfly?",
+        "question": "What is the scientific name of an eagle?",
         "answers": [
-          {
-            "a": "Apis",
-            "b": "Coleoptera",
-            "c": "Formicidae",
-            "d": "Rhopalocera"
-          }
+            "Apis",
+            "Coleoptera",
+            "Aquila",
+            "Rhopalocera"
         ],
-        "correctIndex": 3
+        "correctIndex": 2
       },
       {
-        "question1": "What is the scientific name of a butterfly?",
+        "question": "What is the scientific name of a Dolphin?",
         "answers": [
-          {
-            "a": "Apis",
-            "b": "Coleoptera",
-            "c": "Formicidae",
-            "d": "Rhopalocera"
-          }
+            "Apis",
+            "Delphinidae",
+            "Formicidae",
+            "Rhopalocera"
         ],
-        "correctIndex": 3
-      },
-      {
-        "question1": "What is the scientific name of a butterfly?",
-        "answers": [
-          {
-            "a": "Apis",
-            "b": "Coleoptera",
-            "c": "Formicidae",
-            "d": "Rhopalocera"
-          }
-        ],
-        "correctIndex": 3
-      },
-      {
-        "question1": "What is the scientific name of a butterfly?",
-        "answers": [
-          {
-            "a": "Apis",
-            "b": "Coleoptera",
-            "c": "Formicidae",
-            "d": "Rhopalocera"
-          }
-        ],
-        "correctIndex": 3
+        "correctIndex": 1
       }
   ]
 }
