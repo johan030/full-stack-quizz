@@ -24,27 +24,31 @@
       <h3 id="score"></h3>
 
       <div class="choices">
-        <button id="guess0" class="btn">        
+        <button type = "button" data-index-number='0' class="answer">        
           <p id="choice0"></p>
         </button>
 
-        <button id="guess1" class="btn">
+        <button type = "button" data-index-number='1' class="answer">
           <p id="choice1"></p>
         </button>
           
-        <button id="guess2" class="btn">
+        <button type = "button" data-index-number='2' class="answer">
           <p id="choice2"></p>
         </button>
           
-        <button id="guess3" class="btn">
+        <button type = "button" data-index-number='3' class="answer">
           <p id="choice3"></p>
         </button>
       </div>
 
       <p id="progress"></p>
-      <button type="submit" id="btn-1">Suivant</button>
+      <button type="button" id="btn-1">Suivant</button>
     </div>
-    <div id="score">score</div>
+    <div>
+      <h2 id ="h2">votre score pour cette partie est de : </h2>
+    
+    </div>
+    <a class="btn" href="hallOfFame.html">see the scores</a>
   </div>
    
 <script src="./script.js" type="text/javascript" ></script>

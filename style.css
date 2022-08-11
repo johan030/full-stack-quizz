@@ -67,17 +67,3 @@ body #progress {
   color: #ffa502;
 }
 
-body.correct{
-  background-color: green;
-}
-
-body.wrong{
-  background-color: red;
-}
-.correct{
-  background-color: green;
-}
-
-.wrong{
-  background-color: red;
-}
