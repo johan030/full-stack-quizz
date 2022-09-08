@@ -27,7 +27,10 @@ const copyMyData = async (data) => {
 //constantes
 const questionTitle = document.getElementById("questionTitle");
 const nextBtn = document.getElementById("btn-1");
-const score = document.querySelector('.score');
+const scoreMessage = document.querySelector('.score-message');
+
+let score = 0; // score commence a 0;
+
 
 //modal
 const modal = document.querySelector('.score-modal');
@@ -62,10 +65,16 @@ const selectedQuestion = [...document.querySelectorAll('.answer')].forEach(el =>
 
   if(event.currentTarget.dataset.indexNumber == Emptytab[currentQuestion].correctIndex){
     document.querySelector("body").style.backgroundColor = "#3cb371";
+    
+    score++; // on incremente le score a chaque bonne reponse;
+    scoreMessage.textContent = score;
+  
   }else{
     document.querySelector("body").style.backgroundColor = "#000";
+    score--; // on decremente le score a chaque mauvaise reponse;
+    scoreMessage.textContent = score;
   }
-  localStorage.setItem("score", JSON.stringify(score.value));
+  localStorage.setItem("score", JSON.stringify(score.valueOf));
  getScore();
 }))
 
