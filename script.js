@@ -24,10 +24,17 @@ const copyMyData = async (data) => {
   return Emptytab;
 };
 
+//constantes
 const questionTitle = document.getElementById("questionTitle");
 const nextBtn = document.getElementById("btn-1");
-const saveScoreBtn = document.getElementById('saveScoreBtn'); 
-const MAXHIGHSCORES = 5; // le maximums de score à afficher
+const score = document.querySelector('.score');
+
+//modal
+const modal = document.querySelector('.score-modal');
+const btnCloseModal = document.querySelector('.close-modal');
+const displayModal = document.querySelector('.btn-modal');
+
+
 
 
 function showQuestion() {
@@ -83,7 +90,18 @@ window.addEventListener("load", async (e) => {
 localStorage.setItem('score', JSON.stringify([]) );
 console.log(localStorage.getItem('score'));
 
+});
 
 
-  // lorque l'user à répondu à la totalité des questions le score s'affiche.
+
+//display modal
+displayModal.addEventListener('click', function(){
+  console.log('clicked');
+  modal.classList.remove('hide');
+});
+
+
+//hide modal
+btnCloseModal.addEventListener('click',function(){
+  modal.classList.add('hide');
 });

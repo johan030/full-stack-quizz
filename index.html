@@ -21,7 +21,7 @@
 
       <h2 id="questionTitle"></h2>
         
-      <h3 id="score"></h3>
+      
 
       <div class="choices">
         <button type = "button" data-index-number='0' class="answer">        
@@ -45,10 +45,14 @@
       <button type="button" id="btn-1">Suivant</button>
     </div>
     <div>
-      <h2 id ="h2">votre score pour cette partie est de : </h2>
-    
+      <h2 class="score">votre score pour cette partie est de : 0 </h2>
+      <button class="btn-modal">score</button>
     </div>
-    <a class="btn" href="hallOfFame.html">see the scores</a>
+    <div class="score-modal hide">
+      <button type="button" class="close-modal">&times;</button>
+  
+      <h1>Highscores</h1>
+
   </div>
    
 <script src="./script.js" type="text/javascript" ></script>
