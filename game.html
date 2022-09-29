@@ -1,0 +1,66 @@
+<!-- SOURCE HTML : From Scratch - Développement Web-->
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Quiz - modèle</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="quiz">
+        <h1 class="scoreDisplay" id="score">0</h1>
+        <h2 id="question">Quelle est la bonne réponse</h2>
+
+        <div class="choice">
+          <p class="answer" data-number="1">Choice 1</p>
+        </div>
+        <div class="choice">
+          <p class="answer" data-number="2">Choice 2</p>
+        </div>
+        <div class="choice">
+          <p class="answer" data-number="3">Choice 3</p>
+        </div>
+        <div class="choice">
+          <p class="answer" data-number="4">Choice 4</p>
+        </div>
+
+        <div id="highScores">
+          <h1 id="finalScore">HighScore</h1>
+          <ul id="highScoreList"></ul>
+        </div>
+      </div>
+    </div>
+    
+    <div id="end" class="flex-center flex-column">
+        <h1 id="finalScore"></h1>
+        <form>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="username"
+          />
+          <button
+          type="submit"
+          class="btn"
+          id="saveScoreBtn"
+          onclick="saveHighScore(event)"
+          disabled
+        >
+          save
+        </button>
+    <script src="./game.js" type="text/javascript"></script>
+  </body>
+</html>

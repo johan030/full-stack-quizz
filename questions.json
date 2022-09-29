@@ -1,0 +1,56 @@
+[
+  {
+    "question": "What is the scientific name of a butterfly?",
+    "choice1": "Apis",
+    "choice2": "Coleoptera",
+    "choice3": "Formicidae",
+    "choice4": "Rhopalocera",
+    "answer": 1
+  },
+  {
+    "question": "What is the scientific name of a white shark?",
+
+    "choice1": "Carcharodon carcharias",
+    "choice2": "Coleoptera",
+    "choice3": "Formicidae",
+    "choice4": "Rhopalocera",
+    "answer": 1
+  },
+
+  {
+    "question": "What is the scientific name of a Lion",
+
+    "choice1": "Apis",
+    "choice2": "Panthera leo",
+    "choice3": "Formicidae",
+    "choice4": "Rhopalocera",
+    "answer": 2
+  },
+  {
+    "question": "What is the scientific name of a Cat?",
+
+    "choice1": "Carcharodon carcharias",
+    "choice2": "Coleoptera",
+    "choice3": "Formicidae",
+    "choice4": "Felis catus",
+    "answer": 3
+  },
+  {
+    "question": "What is the scientific name of an eagle?",
+
+    "choice1": "Carcharodon carcharias",
+    "choice2": "Coleoptera",
+    "choice3": "Aquila",
+    "choice4": "Rhopalocera",
+    "answer": 3
+  },
+  {
+    "question": "What is the scientific name of a Dolphin?",
+
+    "choice1": "Delphinidae",
+    "choice2": "Coleoptera",
+    "choice3": "Formicidae",
+    "choice4": "Rhopalocera",
+    "answer": 1
+  }
+]
